@@ -1,0 +1,28 @@
+<form id="formularioUser" action="php/controlador.php" method="POST">
+					<fieldset>
+			             <legend>Nombre del Usuario</legend>
+			             <table id="elementosForm">
+							<tr>
+								<td><label>Nombre:</label></td>
+								<td><input type="text" name="nombre"></td>				
+							</tr>
+							<tr>
+								<td>Fecha de Nacimiento:</td>
+								<td><input type="date" name="fechanacimiento"></td>				
+							</tr>
+							<tr>
+								<td>Email:</td>
+								<td><input type="text" name="email"></td>				
+							</tr>
+							<tr>
+								<td>Entradas:</td>
+								<td></td>				
+							</tr>
+							<tr>
+								<td>Comentario:</td>
+								<td></td>				
+							</tr>
+							<tr><td><input type="submit" value="Editar"></td></tr>
+						</table>
+					</fieldset>
+				</form>
