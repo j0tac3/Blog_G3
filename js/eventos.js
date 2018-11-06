@@ -15,7 +15,7 @@ for(var i = 0; i < lis.length; i++){
 	document.getElementById(lis[i].id).addEventListener("click", redireccionar);
 }
 //Si estamos en la pagina de perfil, anadimos eventos a los botones para redirecionar a la entrada
-if(window.location == 'http://localhost/Proyectos/Blog_G3/perfil.php'){
+if(window.location == 'perfil.php'){
 	var irEntrada = document.getElementsByClassName('ver');
 	for(var i = 0; i < irEntrada.length; i++){
 		//Anadimos el evento a todos los li de la lista
@@ -24,7 +24,7 @@ if(window.location == 'http://localhost/Proyectos/Blog_G3/perfil.php'){
 	}
 }
 //Si estamos en la pagina de perfil, anadimos eventos a los botones para eliminar a la entrada
-if(window.location == 'http://localhost/Proyectos/Blog_G3/perfil.php'){
+if(window.location == 'perfil.php'){
 	var irEntrada = document.getElementsByClassName('eliminar');
 	for(var i = 0; i < irEntrada.length; i++){
 		//Anadimos el evento a todos los li de la lista
@@ -56,7 +56,7 @@ function eliminarEntrada(e){
 }
 
 function redireccionar(e){
-	var rutaDestino ='http://localhost/Proyectos/Blog_G3/' + e.target.id + '.php';
+	var rutaDestino = e.target.id + '.php';
 	//Se comprueba si la pagina a la que se quiere acceder es diferente a la acutal
 	if(window.location != rutaDestino){
 		console.log('redireccionando...');
